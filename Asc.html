@@ -1,0 +1,55 @@
+# website-asc-portal
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASC || Astronomy Space Community</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="meteor"></div>
+
+    <div id="loader1" class="loader-screen">
+        <div class="loader-content animate-pulse">
+            <h1>WELCOME TO ASC</h1>
+            <p class="tap-text">--- TAP DIMANA SAJA UNTUK MASUK ---</p>
+        </div>
+    </div>
+
+    <div id="loader2" class="loader-screen hidden">
+        <div class="loader-content">
+            <div class="earth-animation"></div>
+            <h2 class="glow-text">ASC</h2>
+            <p>Memuat Sistem Ruang Angkasa...</p>
+        </div>
+    </div>
+
+    <main id="main-content" class="hidden">
+        <header>
+            <h1 class="glow-text">ASTRONOMY SPACE COMMUNITY</h1>
+            <p class="subtitle">Jelajahi Alam Semesta Bersama Kami</p>
+        </header>
+
+        <section class="menu-container">
+            <button class="menu-btn" onclick="showPage('pendaftaran')">🚀 Pendaftaran ASC</button>
+            <button class="menu-btn" onclick="showPage('tentang')">📜 TENTANG ASC</button>
+            <button class="menu-btn" onclick="showPage('tiktok')">📱 TIKTOK ASC</button>
+            <button class="menu-btn" onclick="showPage('buku')">📖 BUKU ASTRONOMY</button>
+            <button class="menu-btn" onclick="showPage('ai')">🤖 AI ASC (ASISTEN)</button>
+            <button class="menu-btn" onclick="showPage('foto-planet')">🪐 FOTO & KETERANGAN PLANET</button>
+            <button class="menu-btn" onclick="showPage('member')">👥 MEMBER ASC</button>
+        </section>
+
+        <div id="page-content" class="page-box hidden">
+            <button class="close-btn" onclick="closePage()">✖ Tutup</button>
+            <div id="page-body"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
